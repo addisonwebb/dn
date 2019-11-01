@@ -1,11 +1,11 @@
 
 # Daily Notes Aliases
 dn() {
-  echo " * $1" >> ~/dn/$(date "+%Y-%m-%d")
+  echo "$(date +%H:%M:%S%z) - $1" >> ~/dn/$(date "+%Y-%m-%d")
 }
 
 dno() {
-  echo " * $2" >> ~/dn/$1
+  echo "$(+%Y-%m-%dT%H:%M:%S%z) - $2" >> ~/dn/$1
 }
 
 dnt() {
